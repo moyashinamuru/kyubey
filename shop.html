@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>銀座久兵衛</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/5a09e8b52b.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/hamburger-menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(function () {
+      $('.bxslider').bxSlider({
+        auto: false, // 自動でスライドショーをスタートさせる　（初期値: false）
+        mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+        speed: 500, // アニメーションのスピード　（初期値: 500）
+        pause: 3000, // 画像の切り替わる間隔　（初期値: 4000）
+        pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+        controls: true, // 左右の矢印の表示・非表示　（初期値: true）
+      });
+    });
+  </script>
+</head>
+
+<body id="shop">
+  <div class="page">
+    <header>
+      <div class="inner">
+        <div class="left">
+          <h1><a href="index.html"><img src="images/kyube-logo-kuro.png" alt="トップページ"></a></h1>
+          <ul>
+            <li><a href="access.html">ご予約とアクセス</a></li>
+            <li><a href="">ケータリング</a></li>
+            <li><a href="">おみやげ</a></li>
+            <li><a href="">お品書き</a></li>
+            <li><a href="shop.html">店内のご案内</a></li>
+          </ul>
+        </div>
+        <div class="right">
+                    <!-- ハンバーガーメニュー -->
+                    <button class="hamburger-button"></button>
+
+                    <!-- ナビゲーション -->
+                    <nav class="hamburger-nav">
+                      <ul>
+                        <li><a href="access.html">ご予約とアクセス</a></li>
+                        <li><a href="catering.html">ケータリング</a></li>
+                        <li><a href="omiyage.html">おみやげ</a></li>
+                        <li><a href="menu.html">お品書き</a></li>
+                        <li><a href="shop.html">店内のご案内</a></li>  
+                      </ul>
+                    </nav>          
+        </div>
+      </div>
+      <img class="top" src="images/shop-image.png" alt="">
+    </header>
+
+    <main>
+      <section>
+        <div class="bxslider">
+          <div><img src="images/honten-image1.jpg"></div>
+          <div><img src="images/honten-image2.jpg"></div>
+          <div><img src="images/honten-image3.jpg"></div>
+          <div><img src="images/honten-image4.jpg"></div>
+          <div><img src="images/honten-image-tenzi.jpg"></div>
+          <div><img src="images/honten-image5.jpg"></div>
+        </div>
+        <div class="list">
+          <h1>銀座久兵衛本店</h1>
+          <ul>
+            <li>1F-椅子席カウンター</li>
+            <li>2F-掘り炬燵カウンター</li>
+            <li>3F-和室</li>
+            <li>4F-テーブル席</li>
+            <li class="down">魯山人ギャラリー</li>
+            <li>5F-椅子席カウンター<span>椿・萩・藤</span></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="list sinkan">
+          <h1>銀座久兵衛新館</h1>
+          <ul>
+            <li>1F-椅子席カウンター</li>
+            <li>2F-掘り炬燵カウンター</li>
+            <li>3F-和室<span>掘り炬燵</span></li>
+          </ul>
+        </div>
+        <div class="bxslider">
+          <div><img src="images/sinkan-image1.jpg"></div>
+          <div><img src="images/sinkan-image2.jpg"></div>
+          <div><img src="images/sinkan-image3.jpg"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="">ご予約とアクセス</a></li>
+        <li><a href="">ケータリング</a></li>
+        <li><a href="">おみやげ</a></li>
+        <li><a href="">お品書き</a></li>
+        <li><a href="">店内のご案内</a></li>
+      </ul>
+      <div class="logo-mark">
+        <img src="images/logo-mark.png" alt="">
+      </div>
+      <p><small>&copy;GINZA KYUBEY</small></p>
+    </footer>
+  </div>
+</body>
+
+</html>

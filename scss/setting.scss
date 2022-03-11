@@ -1,0 +1,36 @@
+$main-color: #000000;
+$sub-color: #ffffff;
+
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin absolute() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all 1s;
+}
+
+@mixin big-top() {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+@mixin tategaki() {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl; 
+  text-orientation: upright;
+}
+
+@mixin font-g() {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+@mixin font-m() {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
